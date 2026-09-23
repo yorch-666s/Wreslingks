@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Lucha Libre & Wrestling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <header>
+        <h1>Lucha Libre / Wrestling</h1>
+    
+        <form class="search-container" id="form-busqueda">
+            <input type="search" id="busqueda" placeholder="Buscar luchador (Ej. Mistico, Roman...)" aria-label="Buscar luchador">
+            <button type="submit" id="btn-buscar">Buscar</button>
+        </form>
+        <p id="mensaje-error" class="oculto" aria-live="polite">No encontramos a ese luchador. Revisa el nombre e intenta de nuevo.</p>
+    </header>
+
+    <nav class="paises-nav" aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html" class="btn-pais activo"> Inicio</a></li>
+            <li><a href="usa.html" class="btn-pais">USA</a></li>
+            <li><a href="mexico.html" class="btn-pais">México</a></li>
+            <li><a href="japon.html" class="btn-pais">Japón</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor-principal">
+        <section id="perfil-luchador" class="tarjeta-perfil oculto"></section>
+
+        
+        <section id="galeria-inicio" class="galeria-inicio">
+            <h2>Explora las Empresas del Mundo</h2>
+            <div class="grid-galeria">
+               
+                <div class="card-galeria"><img src="wwe.png" alt="WWE"><p>WWE</p></div>
+                <div class="card-galeria"><img src="aew.png" alt="AEW"><p>AEW</p></div>
+                <div class="card-galeria"><img src="CMLL.png" alt="CMLL"><p>CMLL</p></div>
+                <div class="card-galeria"><img src="AAA.png" alt="AAA"><p>AAA</p></div>
+                <div class="card-galeria"><img src="NJPW.png" alt="NJPW"><p>NJPW</p></div>
+                <div class="card-galeria"><img src="NOAH.png" alt="NOAH"><p>NOAH</p></div>
+            </div>
+            <div class="grid-galeria"> 
+                <div class="card-galeria"><img src="usa.png" alt="Bandera USA"><p>USA</p></div>
+                <div class="card-galeria"><img src="mexico.png" alt="Bandera Mexico"><p>MEXICO</p></div>
+                <div class="card-galeria"><img src="japon.png" alt="Bandera Japon"><p>JAPON</p></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
