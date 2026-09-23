@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA - Lucha Libre & Wrestling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-pais="mexico"> 
+    <header>
+        <h1>Lucha Libre / Wrestling</h1>
+        <form class="search-container" id="form-busqueda">
+            <input type="search" id="busqueda" placeholder="Buscar luchador..." aria-label="Buscar luchador">
+            <button type="submit" id="btn-buscar">Buscar</button>
+        </form>
+        <p id="mensaje-error" class="oculto">No encontramos a ese luchador.</p>
+    </header>
+
+    <nav class="paises-nav" aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html" class="btn-pais">Inicio</a></li>
+            <li><a href="usa.html" class="btn-pais activo">USA</a></li>
+            <li><a href="mexico.html" class="btn-pais">México</a></li>
+            <li><a href="japon.html" class="btn-pais">Japón</a></li>
+        </ul>
+    </nav>
+
+    <nav id="empresas-nav" class="empresas-nav"></nav>
+
+    <nav id="filtros-nav" class="filtros-nav">
+        <select id="filtro-genero" aria-label="Filtrar por género">
+            <option value="todos">Todos los Géneros</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+        <select id="filtro-categoria" aria-label="Filtrar por categoría">
+            <option value="todos">Todas las Categorías</option>
+            <option value="individual">Individual</option>
+            <option value="parejas">Parejas</option>
+            <option value="tercias">Tercias</option>
+            <option value="faccion">Facciones</option>
+        </select>
+    </nav>
+
+    <main class="contenedor-principal">
+        <div id="header-empresa" class="header-empresa oculto">
+            <img id="logo-empresa" src="" alt="Logo Empresa">
+            <h2 id="nombre-empresa"></h2>
+        </div>
+
+        <section id="perfil-luchador" class="tarjeta-perfil oculto"></section>
+
+        <div id="layout-columnas" class="layout-dos-columnas">
+            <section id="roster-grid" class="grid-luchadores"></section>
+
+            <aside id="panel-campeonatos" class="panel-campeonatos oculto">
+                <h3>Campeonatos Activos</h3>
+                <div id="lista-campeonatos"></div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
