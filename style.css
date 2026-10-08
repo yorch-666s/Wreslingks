@@ -1,6 +1,6 @@
 :root {
     --bg-dark: #121212;
-    --bg-card: #1e1e1e;
+    --bg-card: #121212;
     --text-light: #f5f5f5;
     --accent-red: #d32f2f;
     --accent-gold: #ffc107;
@@ -52,7 +52,7 @@ button:hover { background-color: #b71c1c; }
     display: inline-block;
     text-decoration: none;
     font-size: 18px; 
-    background-color: #333; 
+    background-color: #d32f2f; 
     color: white;
     padding: 10px 20px;
     border-radius: 5px; 
@@ -69,7 +69,7 @@ button:hover { background-color: #b71c1c; }
     text-align: center;
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #1a79df;
 }
 .header-empresa img { max-height: 120px; max-width: 300px; object-fit: contain; background-color: rgba(255,255,255,0.1); padding: 10px; border-radius: 10px;}
 
@@ -88,7 +88,7 @@ button:hover { background-color: #b71c1c; }
     gap: 20px;
 }
 
-.card-luchador { background-color: var(--bg-card); border: 1px solid #333; border-radius: 8px; padding: 15px; text-align: center; transition: 0.2s; }
+.card-luchador { background-color: var(--bg-card); border: 1px solid #40d8f0; border-radius: 8px; padding: 15px; text-align: center; transition: 0.2s; }
 .card-luchador:hover { transform: translateY(-5px); border-color: var(--accent-gold); }
 .card-luchador img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; background-color: #000; }
 
@@ -97,7 +97,7 @@ button:hover { background-color: #b71c1c; }
     flex: 1;
     min-width: 280px;
     background-color: var(--bg-card);
-    border: 1px solid #333;
+    border: 1px solid #8f0000;
     border-top: 5px solid var(--accent-gold);
     border-radius: 8px;
     padding: 20px;
