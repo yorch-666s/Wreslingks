@@ -37,8 +37,8 @@ h1 { color: var(--accent-gold); text-transform: uppercase; letter-spacing: 2px; 
 
 /* Botón de tema */
 .btn-theme {
-    background-color: var(--bg-card);
-    color: var(--text-main);
+    background-color: var(--accent-red);
+    color: white;
     border: 1px solid var(--glass-border);
     margin-bottom: 10px;
 }

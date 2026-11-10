@@ -1,6 +1,6 @@
 // --- 1. BASE DE DATOS DE EMPRESAS Y CAMPEONATOS ---
 const infoEmpresas = {
-    wwe: { nombre: "World Wrestling Entertainment", logo: "wwe.png", campeonatos: { "Masculino Individual": ["Undisputed WWE Championship", "World Heavyweight Championship", "Intercontinental Championship", "United States Championship"], "Femenino Individual": ["WWE Women's Championship", "Women's World Championship","Women's Intercontinental Championship","Women's United States Championship"], "Parejas": ["World Tag Team Championship", "WWE Tag Team Championship", "WWE Women's Tag Team Championship"] } },
+    wwe: { nombre: "World Wrestling Entertainment", logo: "assets/img/logo/wwe.png", campeonatos: { "Masculino Individual": ["Undisputed WWE Championship", "World Heavyweight Championship", "Intercontinental Championship", "United States Championship"], "Femenino Individual": ["WWE Women's Championship", "Women's World Championship"], "Parejas": ["World Tag Team Championship", "WWE Tag Team Championship", "WWE Women's Tag Team Championship"] } },
     aew: { nombre: "All Elite Wrestling", logo: "aew.png", campeonatos: { "Masculino Individual": ["AEW World Championship", "TNT Championship", "International Championship", "Continental Championship"], "Femenino Individual": ["AEW Women's World Championship", "TBS Championship"], "Parejas y Tercias": ["AEW World Tag Team Championship", "AEW World Trios Championship"] } },
     cmll: { nombre: "Consejo Mundial de Lucha Libre", logo: "CMLL.png", campeonatos: { "Masculino Individual": ["Campeonato Mundial Histórico NWA Peso Medio", "Campeonato Mundial Completo del CMLL", "Campeonato Mundial Semicompleto"], "Femenino Individual": ["Campeonato Mundial Femenil del CMLL", "Campeonato Nacional Femenil"], "Parejas y Tercias": ["Campeonato Mundial de Parejas", "Campeonato Mundial de Tríos del CMLL"] } },
     aaa: { nombre: "Lucha Libre AAA Worldwide", logo: "AAA.png", campeonatos: { "Masculino Individual": ["Megacampeonato de AAA", "Campeonato Latinoamericano AAA", "Campeonato Mundial de Peso Crucero AAA"], "Femenino Individual": ["Campeonato Reina de Reinas de AAA"], "Parejas y Tercias": ["Campeonato Mundial en Parejas de AAA", "Campeonato Mundial de Tríos de AAA", "Campeonato Mundial en Parejas Mixto"] } },
@@ -10,12 +10,12 @@ const infoEmpresas = {
 
 // --- 2. BASE DE DATOS DE LUCHADORES SIMULADA ---
 const baseDatosLuchadores = [
-    { nombre: "Roman Reigns", pais: "usa", empresa: "wwe", genero: "masculino", categoria: "individual", nacionalidad: "Estadounidense", peso: "120 kg", altura: "1.91 m", estilo: "Powerhouse / Brawler", img: "RomanReigns2.png" },
-    { nombre: "Rhea Ripley", pais: "usa", empresa: "wwe", genero: "femenino", categoria: "individual", nacionalidad: "Australiana", peso: "77 kg", altura: "1.70 m", estilo: "Powerhouse", img: "RheaRipley.png" },
-    { nombre: "The Bloodline", pais: "usa", empresa: "wwe", genero: "masculino", categoria: "faccion", nacionalidad: "Samoana/Estadounidense", peso: "N/A", altura: "N/A", estilo: "Facción Dominante", img: "TheBloodline.png" },
-    { nombre: "Char Alexa", pais: "usa", empresa: "wwe", genero: "femenino", categoria: "parejas", nacionalidad: "Estadounidense", peso: "N/A", altura: "N/A", estilo: "Facción Dominante", img: "CharAlexa.jpg" },
-    { nombre: "Legado del Fantasma", pais: "usa", empresa: "wwe", genero: "masculino", categoria: "tercias", nacionalidad: "Mexicanos", peso: "N/A", altura: "N/A", estilo: "Strong Style", img: "fantasmalegasy.jpg" },
-    { nombre: "Kenny Omega", pais: "usa", empresa: "aew", genero: "masculino", categoria: "individual", nacionalidad: "Canadiense", peso: "102 kg", altura: "1.83 m", estilo: "Strong Style / High Flyer", img: "KennyOmega.jpg" },
+    { nombre: "Roman Reigns", pais: "usa", empresa: "wwe", genero: "masculino", categoria: "individual", nacionalidad: "Estadounidense", peso: "120 kg", altura: "1.91 m", estilo: "Powerhouse / Brawler", img: "assets/img/roster_wwe/RomanReigns2.png" },
+    { nombre: "Rhea Ripley", pais: "usa", empresa: "wwe", genero: "femenino", categoria: "individual", nacionalidad: "Australiana", peso: "77 kg", altura: "1.70 m", estilo: "Powerhouse", img: "assets/img/roster_wwe/RheaRipley.png" },
+    { nombre: "The Bloodline", pais: "usa", empresa: "wwe", genero: "masculino", categoria: "faccion", nacionalidad: "Samoana/Estadounidense", peso: "N/A", altura: "N/A", estilo: "Facción Dominante", img: "assets/img/roster_wwe/TheBloodline.png" },
+    { nombre: "Char Alexa", pais: "usa", empresa: "wwe", genero: "femenino", categoria: "parejas", nacionalidad: "Estadounidense", peso: "N/A", altura: "N/A", estilo: "Facción Dominante", img: "assets/img/roster_wwe/CharAlexa.jpg" },
+    { nombre: "Legado del Fantasma", pais: "usa", empresa: "wwe", genero: "masculino", categoria: "tercias", nacionalidad: "Mexicanos", peso: "N/A", altura: "N/A", estilo: "Strong Style", img: "assets/img/roster_wwe/fantasmalegasy.jpg" },
+    { nombre: "Kenny Omega", pais: "usa", empresa: "aew", genero: "masculino", categoria: "individual", nacionalidad: "Canadiense", peso: "102 kg", altura: "1.83 m", estilo: "Strong Style / High Flyer", img: "assets/img/roster_aew/KennyOmega.jpg" },
     { nombre: "Don Calis Family", pais: "usa", empresa: "aew", genero: "masculino", categoria: "faccion", nacionalidad: "Mexicana/Canadiense/Estadounidense", peso: "N/A", altura: "N/A", estilo: "Facción Dominante", img: "DonCalis.png" },
     { nombre: "Sky Blue", pais: "usa", empresa: "aew", genero: "femenino", categoria: "individual", nacionalidad: "Canadiense", peso: "102 kg", altura: "1.83 m", estilo: "Strong Style / High Flyer", img: "SkyBlue.png" },
     { nombre: "The Conglomeration", pais: "usa", empresa: "aew", genero: "masculino", categoria: "tercias", nacionalidad: "Estadounidense", peso: "N/A", altura: "N/A", estilo: "Strong Style", img: "TheConglomeration.png" },
@@ -23,10 +23,9 @@ const baseDatosLuchadores = [
     { nombre: "Mistico", pais: "mexico", empresa: "cmll", genero: "masculino", categoria: "individual", nacionalidad: "Mexicano", peso: "79 kg", altura: "1.70 m", estilo: "Aéreo / Técnico", img: "Mistico2.jpg" },
     { nombre: "Persephone", pais: "mexico", empresa: "cmll", genero: "femenino", categoria: "individual", nacionalidad: "Mexicano", peso: "79 kg", altura: "1.70 m", estilo: "Strong Style", img: "Persephone.png" },
     { nombre: "Los Hermanos Chavez", pais: "mexico", empresa: "cmll", genero: "masculino", categoria: "parejas", nacionalidad: "Mexicana", peso: "Combinado 180 kg", altura: "Promedio 1.75 m", estilo: "Rudo / Clásico", img: "HermanosChavez.jpg" },
-    { nombre: "El Hijo del Vikingo", pais: "mexico", empresa: "aaa", genero: "masculino", categoria: "individual", nacionalidad: "Mexicano", peso: "72 kg", altura: "1.69 m", estilo: "High Flyer Extremo", img: "HijodelVikingo.png" },
-    // { nombre: "Wagner Bros.", pais: "mexico", empresa: "cmll", genero: "femenino", categoria: "individual", nacionalidad: "Mexicano", peso: "79 kg", altura: "1.70 m", estilo: "Strong Style", img: "galeno.png"},
-    { nombre: "Tetsuya Naito", pais: "japon", empresa: "njpw", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "102 kg", altura: "1.80 m", estilo: "Técnico / Strong Style", img: "TetsuyaNaito.jpg" },
-    { nombre: "Naomichi Marufuji", pais: "japon", empresa: "noah", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "90 kg", altura: "1.76 m", estilo: "Striker / Aéreo", img: "NaomichiMarufuji.png" }
+    { nombre: "El Hijo del Vikingo", pais: "mexico", empresa: "aaa", genero: "masculino", categoria: "individual", nacionalidad: "Mexicano", peso: "72 kg", altura: "1.69 m", estilo: "High Flyer Extremo", img: "assets/img/roster_aaa/HijodelVikingo.png" },
+    { nombre: "Tetsuya Naito", pais: "japon", empresa: "njpw", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "102 kg", altura: "1.80 m", estilo: "Técnico / Strong Style", img: "assets/img/roster_njpw/TetsuyaNaito.jpg" },
+    { nombre: "Naomichi Marufuji", pais: "japon", empresa: "noah", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "90 kg", altura: "1.76 m", estilo: "Striker / Aéreo", img: "assets/img/roster_noah/NaomichiMarufuji.png" }
 ];
 
 // --- 3. VARIABLES DEL DOM ---
@@ -131,7 +130,7 @@ function seleccionarEmpresa(empresaKey) {
             htmlCat += `
                 <li class="camp-item" onclick="toggleCampImg(this)">
                     🏆 ${camp} <span>▼</span>
-                    <img class="camp-img" src="${nombreFormateado}" onerror="this.src='${imgPlaceholder}'" alt="${camp}">
+                    <img class="camp-img" src="assets/img/campeonatos/${nombreFormateado}" onerror="this.src='assets/img/campeonatos/${imgPlaceholder}'" alt="${camp}">
                 </li>`; 
         });
         
