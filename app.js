@@ -1,58 +1,11 @@
 // --- 1. BASE DE DATOS DE EMPRESAS Y CAMPEONATOS ---
 const infoEmpresas = {
-    wwe: {
-        nombre: "World Wrestling Entertainment",
-        logo: "wwe.png",
-        campeonatos: {
-            "Masculino Individual": ["Undisputed WWE Championship", "World Heavyweight Championship", "Intercontinental Championship", "United States Championship"],
-            "Femenino Individual": ["WWE Women's Championship", "Women's World Championship"],
-            "Parejas": ["World Tag Team Championship", "WWE Tag Team Championship", "WWE Women's Tag Team Championship"]
-        }
-    },
-    aew: {
-        nombre: "All Elite Wrestling",
-        logo: "aew.png",
-        campeonatos: {
-            "Masculino Individual": ["AEW World Championship", "TNT Championship", "International Championship", "Continental Championship"],
-            "Femenino Individual": ["AEW Women's World Championship", "TBS Championship"],
-            "Parejas y Tercias": ["AEW World Tag Team Championship", "AEW World Trios Championship"]
-        }
-    },
-    cmll: {
-        nombre: "Consejo Mundial de Lucha Libre",
-        logo: "CMLL.png",
-        campeonatos: {
-            "Masculino Individual": ["Campeonato Mundial Histórico NWA Peso Medio", "Campeonato Mundial Completo del CMLL", "Campeonato Mundial Semicompleto"],
-            "Femenino Individual": ["Campeonato Mundial Femenil del CMLL", "Campeonato Nacional Femenil"],
-            "Parejas y Tercias": ["Campeonato Mundial de Parejas", "Campeonato Mundial de Tríos del CMLL"]
-        }
-    },
-    aaa: {
-        nombre: "Lucha Libre AAA Worldwide",
-        logo: "AAA.png",
-        campeonatos: {
-            "Masculino Individual": ["Megacampeonato de AAA", "Campeonato Latinoamericano AAA", "Campeonato Mundial de Peso Crucero AAA"],
-            "Femenino Individual": [`Campeonato Reina de Reinas de AAA`],
-            "Parejas y Tercias": ["Campeonato Mundial en Parejas de AAA", "Campeonato Mundial de Tríos de AAA", "Campeonato Mundial en Parejas Mixto"]
-        }
-    },
-    njpw: {
-        nombre: "New Japan Pro-Wrestling",
-        logo: "NJPW.png",
-        campeonatos: {
-            "Masculino Individual": ["IWGP World Heavyweight Championship","IWGP Global Heavyweight Championship", "NEVER Openweight Championship", "IWGP Junior Heavyweight Championship"],
-            "Femenino Individual": ["IWGP Women's Championship"],
-            "Parejas": ["IWGP Tag Team Championship", "IWGP Junior Heavyweight Tag Team Championship"]
-        }
-    },
-    noah: {
-        nombre: "Pro Wrestling NOAH",
-        logo: "NOAH.png",
-        campeonatos: {
-            "Masculino Individual": ["GHC Heavyweight Championship", "GHC National Championship", "GHC Junior Heavyweight Championship"],
-            "Parejas": ["GHC Tag Team Championship", "GHC Junior Heavyweight Tag Team Championship"]
-        }
-    }
+    wwe: { nombre: "World Wrestling Entertainment", logo: "wwe.png", campeonatos: { "Masculino Individual": ["Undisputed WWE Championship", "World Heavyweight Championship", "Intercontinental Championship", "United States Championship"], "Femenino Individual": ["WWE Women's Championship", "Women's World Championship","Women's Intercontinental Championship","Women's United States Championship"], "Parejas": ["World Tag Team Championship", "WWE Tag Team Championship", "WWE Women's Tag Team Championship"] } },
+    aew: { nombre: "All Elite Wrestling", logo: "aew.png", campeonatos: { "Masculino Individual": ["AEW World Championship", "TNT Championship", "International Championship", "Continental Championship"], "Femenino Individual": ["AEW Women's World Championship", "TBS Championship"], "Parejas y Tercias": ["AEW World Tag Team Championship", "AEW World Trios Championship"] } },
+    cmll: { nombre: "Consejo Mundial de Lucha Libre", logo: "CMLL.png", campeonatos: { "Masculino Individual": ["Campeonato Mundial Histórico NWA Peso Medio", "Campeonato Mundial Completo del CMLL", "Campeonato Mundial Semicompleto"], "Femenino Individual": ["Campeonato Mundial Femenil del CMLL", "Campeonato Nacional Femenil"], "Parejas y Tercias": ["Campeonato Mundial de Parejas", "Campeonato Mundial de Tríos del CMLL"] } },
+    aaa: { nombre: "Lucha Libre AAA Worldwide", logo: "AAA.png", campeonatos: { "Masculino Individual": ["Megacampeonato de AAA", "Campeonato Latinoamericano AAA", "Campeonato Mundial de Peso Crucero AAA"], "Femenino Individual": ["Campeonato Reina de Reinas de AAA"], "Parejas y Tercias": ["Campeonato Mundial en Parejas de AAA", "Campeonato Mundial de Tríos de AAA", "Campeonato Mundial en Parejas Mixto"] } },
+    njpw: { nombre: "New Japan Pro-Wrestling", logo: "NJPW.png", campeonatos: { "Masculino Individual": ["IWGP World Heavyweight Championship","IWGP Global Heavyweight Championship", "NEVER Openweight Championship", "IWGP Junior Heavyweight Championship"], "Femenino Individual": ["IWGP Women's Championship"], "Parejas": ["IWGP Tag Team Championship", "IWGP Junior Heavyweight Tag Team Championship"] } },
+    noah: { nombre: "Pro Wrestling NOAH", logo: "NOAH.png", campeonatos: { "Masculino Individual": ["GHC Heavyweight Championship", "GHC National Championship", "GHC Junior Heavyweight Championship"], "Parejas": ["GHC Tag Team Championship", "GHC Junior Heavyweight Tag Team Championship"] } }
 };
 
 // --- 2. BASE DE DATOS DE LUCHADORES SIMULADA ---
@@ -71,15 +24,12 @@ const baseDatosLuchadores = [
     { nombre: "Persephone", pais: "mexico", empresa: "cmll", genero: "femenino", categoria: "individual", nacionalidad: "Mexicano", peso: "79 kg", altura: "1.70 m", estilo: "Strong Style", img: "Persephone.png" },
     { nombre: "Los Hermanos Chavez", pais: "mexico", empresa: "cmll", genero: "masculino", categoria: "parejas", nacionalidad: "Mexicana", peso: "Combinado 180 kg", altura: "Promedio 1.75 m", estilo: "Rudo / Clásico", img: "HermanosChavez.jpg" },
     { nombre: "El Hijo del Vikingo", pais: "mexico", empresa: "aaa", genero: "masculino", categoria: "individual", nacionalidad: "Mexicano", peso: "72 kg", altura: "1.69 m", estilo: "High Flyer Extremo", img: "HijodelVikingo.png" },
-    // { nombre: "Las Toxicas", pais: "mexico", empresa: "aaa", genero: "femenino", categoria: "tercias", nacionalidad: "Mexicana", peso: "N/A", altura: "N/A", estilo: "Strong Style", img: "Toxicas.png" },
-    // { nombre: "La Catalina", pais: "mexico", empresa: "aaa", genero: "femenino", categoria: "individual", nacionalidad: "Chilena", peso: "72 kg", altura: "1.69 m", estilo: "Striker / Técnico ", img: "Catalina.png" },
-    //{ nombre: "Psyco Circus", pais: "mexico", empresa: "aaa", genero: "masculino", categoria: "faccion", nacionalidad: "Mexicana", peso: "N/A", altura: "N/A", estilo: "Técnico ", img: "PsycoCircus.png" },
-    //{ nombre: "Lolaguana", pais: "mexico", empresa: "aaa", genero: "femenino/masculino", categoria: "parejas", nacionalidad: "Cubana/Mexicana", peso: "N/A", altura: "N/A", estilo: "Striker / Técnico ", img: "Lolaguana.png" },
+    // { nombre: "Wagner Bros.", pais: "mexico", empresa: "cmll", genero: "femenino", categoria: "individual", nacionalidad: "Mexicano", peso: "79 kg", altura: "1.70 m", estilo: "Strong Style", img: "galeno.png"},
     { nombre: "Tetsuya Naito", pais: "japon", empresa: "njpw", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "102 kg", altura: "1.80 m", estilo: "Técnico / Strong Style", img: "TetsuyaNaito.jpg" },
     { nombre: "Naomichi Marufuji", pais: "japon", empresa: "noah", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "90 kg", altura: "1.76 m", estilo: "Striker / Aéreo", img: "NaomichiMarufuji.png" }
 ];
 
-// --- VARIABLES DEL DOM ---
+// --- 3. VARIABLES DEL DOM ---
 let empresaActual = 'todas';
 let paisActual = '';
 
@@ -90,32 +40,55 @@ const headerEmpresa = document.getElementById('header-empresa');
 const panelCampeonatos = document.getElementById('panel-campeonatos');
 const galeriaInicio = document.getElementById('galeria-inicio');
 
-// --- INICIALIZACIÓN AL CARGAR LA PÁGINA ---
+// --- 4. INICIALIZACIÓN ---
 document.addEventListener('DOMContentLoaded', () => {
-    // Detectar en qué archivo/página estamos
-    const bodyPais = document.body.getAttribute('data-pais');
+    // 4.1. Tema Claro / Oscuro
+    const btnThemeToggle = document.getElementById('btn-theme-toggle');
     
+    // Comprobar si había tema guardado en LocalStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.setAttribute('data-theme', 'light');
+        if(btnThemeToggle) btnThemeToggle.textContent = '🌑 Modo Oscuro';
+    }
+
+    if (btnThemeToggle) {
+        btnThemeToggle.addEventListener('click', () => {
+            const isDark = document.body.getAttribute('data-theme') !== 'light';
+            if (isDark) {
+                document.body.setAttribute('data-theme', 'light');
+                btnThemeToggle.textContent = '🌑 Modo Oscuro';
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.body.removeAttribute('data-theme');
+                btnThemeToggle.textContent = '🌙 Modo Claro';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
+
+    // 4.2. Detectar Contexto de País
+    const bodyPais = document.body.getAttribute('data-pais');
     if (bodyPais) {
-        // Estamos en una página de país (usa, mexico, japon)
         paisActual = bodyPais;
         generarBotonesEmpresas(paisActual);
         aplicarFiltros();
         
-        // Agregar listeners a los selectores
         document.getElementById('filtro-genero').addEventListener('change', aplicarFiltros);
         document.getElementById('filtro-categoria').addEventListener('change', aplicarFiltros);
     }
 
-    // Configurar el formulario de búsqueda
+    // 4.3. Buscador Global
     const formBusqueda = document.getElementById('form-busqueda');
     if (formBusqueda) {
         formBusqueda.addEventListener('submit', (e) => {
-            e.preventDefault(); // Evita que recargue la página al enviar el formulario
+            e.preventDefault();
             buscarPorNombre();
         });
     }
 });
 
+// --- 5. LOGICA DE EMPRESAS Y FILTROS ---
 function generarBotonesEmpresas(pais) {
     if (!navEmpresas) return;
     
@@ -136,25 +109,50 @@ function generarBotonesEmpresas(pais) {
 
 function seleccionarEmpresa(empresaKey) {
     empresaActual = empresaKey;
-    const info = infoEmpresas[empresaKey]; // Utiliza el objeto original de empresas[cite: 2]
+    const info = infoEmpresas[empresaKey];
 
+    // Cambiar cabecera
     document.getElementById('logo-empresa').src = info.logo;
     document.getElementById('nombre-empresa').textContent = info.nombre;
     headerEmpresa.classList.remove('oculto');
     panelCampeonatos.classList.remove('oculto');
     
+    // Poblar Campeonatos con Imágenes Desplegables
     const contenedorCamps = document.getElementById('lista-campeonatos');
     contenedorCamps.innerHTML = '';
     
-    // Mantiene la lógica de renderizado de campeonatos original[cite: 2]
     for (const [categoria, lista] of Object.entries(info.campeonatos)) {
         let htmlCat = `<div class="cat-campeonato">${categoria}</div><ul class="lista-camp-ul">`;
-        lista.forEach(camp => { htmlCat += `<li>${camp}</li>`; });
+        
+        lista.forEach(camp => { 
+            const nombreFormateado = camp.replace(/ /g, '_').toLowerCase() + '.png';
+            const imgPlaceholder = `https://via.placeholder.com/300x150/1e293b/fbbf24?text=${encodeURIComponent(camp)}`;
+            
+            htmlCat += `
+                <li class="camp-item" onclick="toggleCampImg(this)">
+                    🏆 ${camp} <span>▼</span>
+                    <img class="camp-img" src="${nombreFormateado}" onerror="this.src='${imgPlaceholder}'" alt="${camp}">
+                </li>`; 
+        });
+        
         htmlCat += `</ul>`;
         contenedorCamps.innerHTML += htmlCat;
     }
 
     aplicarFiltros();
+}
+
+window.toggleCampImg = function(elementoLista) {
+    const imagen = elementoLista.querySelector('.camp-img');
+    const icono = elementoLista.querySelector('span');
+    
+    if (imagen.classList.contains('mostrar')) {
+        imagen.classList.remove('mostrar');
+        icono.textContent = '▼';
+    } else {
+        imagen.classList.add('mostrar');
+        icono.textContent = '▲';
+    }
 }
 
 function aplicarFiltros() {
@@ -163,12 +161,11 @@ function aplicarFiltros() {
     const generoFiltro = document.getElementById('filtro-genero').value;
     const categoriaFiltro = document.getElementById('filtro-categoria').value;
 
-    const resultados = baseDatosLuchadores.filter(luchador => { // Filtra el arreglo original[cite: 2]
+    const resultados = baseDatosLuchadores.filter(luchador => {
         const coincidePais = luchador.pais === paisActual;
         const coincideEmpresa = (empresaActual === 'todas') || (luchador.empresa === empresaActual);
         const coincideGenero = (generoFiltro === 'todos') || (luchador.genero === generoFiltro);
         const coincideCategoria = (categoriaFiltro === 'todos') || (luchador.categoria === categoriaFiltro);
-
         return coincidePais && coincideEmpresa && coincideGenero && coincideCategoria;
     });
 
@@ -187,18 +184,30 @@ function renderizarRoster(arregloLuchadores) {
         return;
     }
 
-    // Mantiene la maquetación HTML de las tarjetas que ya tenías[cite: 2]
     arregloLuchadores.forEach(luchador => {
         const card = document.createElement('div');
-        card.className = 'card-luchador';
+        // Dinamiza la clase CSS para que agarre el var(--brand-color) de la empresa
+        card.className = `card-luchador card-${luchador.empresa.toLowerCase()}`;
         card.innerHTML = `
             <img src="${luchador.img}" alt="${luchador.nombre}" onerror="this.src='https://via.placeholder.com/300x400/222/fff?text=Sin+Foto'">
             <h3>${luchador.nombre}</h3>
             <p class="tag-empresa">${luchador.empresa.toUpperCase()}</p><br>
-            <button type="button" onclick='mostrarPerfil(${JSON.stringify(luchador)})'>Ver Ficha</button>
+            <button type="button" onclick='animarYMostrarPerfil(this, ${JSON.stringify(luchador)})'>Ver Ficha</button>
         `;
         gridRoster.appendChild(card);
     });
+}
+
+// --- 6. ANIMACIÓN DE GIRO Y MOSTRAR PERFIL ---
+window.animarYMostrarPerfil = function(btnElement, luchador) {
+    const card = btnElement.closest('.card-luchador');
+    card.classList.add('spin-flip');
+    
+    // Espera que termine la animación (800ms)
+    setTimeout(() => {
+        mostrarPerfil(luchador);
+        card.classList.remove('spin-flip');
+    }, 800);
 }
 
 window.mostrarPerfil = function(luchador) {
@@ -207,12 +216,12 @@ window.mostrarPerfil = function(luchador) {
     if (panelCampeonatos) panelCampeonatos.classList.add('oculto');
     if (headerEmpresa) headerEmpresa.classList.add('oculto');
     if (navEmpresas) navEmpresas.classList.add('oculto');
+    if (document.getElementById('filtros-nav')) document.getElementById('filtros-nav').classList.add('oculto');
     
     perfilLuchador.classList.remove('oculto');
 
-    // Mantiene la inyección del perfil que estructuraste en el código original[cite: 2]
     perfilLuchador.innerHTML = `
-        <img class="perfil-img" src="${luchador.img}" alt="${luchador.nombre}">
+        <img class="perfil-img" src="${luchador.img}" alt="${luchador.nombre}" onerror="this.src='https://via.placeholder.com/300x400/222/fff?text=Sin+Foto'">
         <div class="perfil-info">
             <h2>${luchador.nombre}</h2>
             <span class="tag-empresa">${luchador.empresa.toUpperCase()} - ${luchador.pais.toUpperCase()}</span>
@@ -221,18 +230,19 @@ window.mostrarPerfil = function(luchador) {
             <p><strong>Estilo de Lucha:</strong> ${luchador.estilo}</p>
             <p><strong>Altura:</strong> ${luchador.altura}</p>
             <p><strong>Peso:</strong> ${luchador.peso}</p>
-            <br>
-            <button class="btn-pais" onclick="location.reload()">Regresar</button>
+            <br><br>
+            <button class="btn-pais" onclick="location.reload()">Regresar al Roster</button>
         </div>
     `;
 };
 
+// --- 7. BUSCADOR ---
 function buscarPorNombre() {
     const query = document.getElementById('busqueda').value.toLowerCase().trim();
     const mensajeError = document.getElementById('mensaje-error');
     if (!query) return;
 
-    const resultado = baseDatosLuchadores.find(l => l.nombre.toLowerCase().includes(query)); // Lógica de búsqueda original[cite: 2]
+    const resultado = baseDatosLuchadores.find(l => l.nombre.toLowerCase().includes(query));
 
     if (resultado) {
         mensajeError.classList.add('oculto');
