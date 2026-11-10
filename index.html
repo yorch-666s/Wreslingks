@@ -8,8 +8,8 @@
 </head>
 <body> 
     <header>
+        <button id="btn-theme-toggle" class="btn-theme">🌙 Modo Claro</button>
         <h1>Lucha Libre / Wrestling</h1>
-    
         <form class="search-container" id="form-busqueda">
             <input type="search" id="busqueda" placeholder="Buscar luchador (Ej. Mistico, Roman...)" aria-label="Buscar luchador">
             <button type="submit" id="btn-buscar">Buscar</button>
@@ -19,7 +19,7 @@
 
     <nav class="paises-nav" aria-label="Navegación principal">
         <ul>
-            <li><a href="index.html" class="btn-pais activo"> Inicio</a></li>
+            <li><a href="index.html" class="btn-pais activo">🏠 Inicio</a></li>
             <li><a href="usa.html" class="btn-pais">USA</a></li>
             <li><a href="mexico.html" class="btn-pais">México</a></li>
             <li><a href="japon.html" class="btn-pais">Japón</a></li>
@@ -29,26 +29,23 @@
     <main class="contenedor-principal">
         <section id="perfil-luchador" class="tarjeta-perfil oculto"></section>
 
-        
         <section id="galeria-inicio" class="galeria-inicio">
             <h2>Explora las Empresas del Mundo</h2>
             <div class="grid-galeria">
-               
                 <div class="card-galeria"><img src="wwe.png" alt="WWE"><p>WWE</p></div>
-                <div class="card-galeria"><img src="aew.png" alt="AEW"><p>AEW</p></div>
-                <div class="card-galeria"><img src="CMLL.png" alt="CMLL"><p>CMLL</p></div>
-                <div class="card-galeria"><img src="AAA.png" alt="AAA"><p>AAA</p></div>
-                <div class="card-galeria"><img src="NJPW.png" alt="NJPW"><p>NJPW</p></div>
-                <div class="card-galeria"><img src="NOAH.png" alt="NOAH"><p>NOAH</p></div>
+                <div class="card-galeria"><img src="aew.png" alt="AEW" onerror="this.src='https://via.placeholder.com/100x80/222/fff?text=AEW'"><p>AEW</p></div>
+                <div class="card-galeria"><img src="CMLL.png" alt="CMLL" onerror="this.src='https://via.placeholder.com/100x80/222/fff?text=CMLL'"><p>CMLL</p></div>
+                <div class="card-galeria"><img src="AAA.png" alt="AAA" onerror="this.src='https://via.placeholder.com/100x80/222/fff?text=AAA'"><p>AAA</p></div>
+                <div class="card-galeria"><img src="NJPW.png" alt="NJPW" onerror="this.src='https://via.placeholder.com/100x80/222/fff?text=NJPW'"><p>NJPW</p></div>
+                <div class="card-galeria"><img src="NOAH.png" alt="NOAH" onerror="this.src='https://via.placeholder.com/100x80/222/fff?text=NOAH'"><p>NOAH</p></div>
             </div>
             <div class="grid-galeria"> 
-                <div class="card-galeria"><img src="usa.png" alt="Bandera USA"><p>USA</p></div>
-                <div class="card-galeria"><img src="mexico.png" alt="Bandera Mexico"><p>MEXICO</p></div>
-                <div class="card-galeria"><img src="japon.png" alt="Bandera Japon"><p>JAPON</p></div>
+                <div class="card-galeria"><img src="usa.png" alt="USA" onerror="this.src='https://via.placeholder.com/100x80/222/fff?text=USA'"><p>USA</p></div>
+                <div class="card-galeria"><img src="mexico.png" alt="MEXICO" onerror="this.src='https://via.placeholder.com/100x80/222/fff?text=MEX'"><p>MEXICO</p></div>
+                <div class="card-galeria"><img src="japon.png" alt="JAPON" onerror="this.src='https://via.placeholder.com/100x80/222/fff?text=JPN'"><p>JAPON</p></div>
             </div>
         </section>
     </main>
-
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

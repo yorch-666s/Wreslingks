@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USA - Lucha Libre & Wrestling</title>
+    <title>México - Lucha Libre & Wrestling</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body data-pais="mexico"> 
     <header>
+        <button id="btn-theme-toggle" class="btn-theme">🌙 Modo Claro</button>
         <h1>Lucha Libre / Wrestling</h1>
         <form class="search-container" id="form-busqueda">
             <input type="search" id="busqueda" placeholder="Buscar luchador..." aria-label="Buscar luchador">
@@ -19,10 +19,10 @@
 
     <nav class="paises-nav" aria-label="Navegación principal">
         <ul>
-            <li><a href="index.html" class="btn-pais">Inicio</a></li>
-            <li><a href="usa.html" class="btn-pais activo">USA</a></li>
-            <li><a href="mexico.html" class="btn-pais">México</a></li>
-            <li><a href="japon.html" class="btn-pais">Japón</a></li>
+            <li><a href="index.html" class="btn-pais">🏠 Inicio</a></li>
+            <li><a href="usa.html" class="btn-pais ">USA</a></li>
+            <li><a href="mexico.html" class="btn-pais activo">México</a></li>
+            <li><a href="japon.html" class="btn-pais ">Japón</a></li>
         </ul>
     </nav>
 
@@ -53,14 +53,12 @@
 
         <div id="layout-columnas" class="layout-dos-columnas">
             <section id="roster-grid" class="grid-luchadores"></section>
-
             <aside id="panel-campeonatos" class="panel-campeonatos oculto">
-                <h3>Campeonatos Activos</h3>
+                <h3>🏆 Campeonatos Activos</h3>
                 <div id="lista-campeonatos"></div>
             </aside>
         </div>
     </main>
-
     <script src="app.js"></script>
 </body>
 </html>
