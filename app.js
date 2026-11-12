@@ -116,9 +116,23 @@ const baseDatosLuchadores = [
     { nombre: "Laredo Kid", img: "assets/img/roster_aaa/Laredo.png" },
     { nombre: "Maravilla", img: "assets/img/roster_aaa/Maravilla.png" },
     { nombre: "Pimpinella Scarlata", img: "assets/img/roster_aaa/pimpinella.png" },
-    
-    
+    { nombre: "Alex Windsor", img: "assets/img/roster_njpw/alex-winsor.avif" },
+    { nombre: "Alex Zayne", img: "assets/img/roster_njpw/AlexZayne.png" },
+    { nombre: "Aron", img: "assets/img/roster_njpw/Aron.png" },
+    { nombre: "Douki", img: "assets/img/roster_njpw/Douki.png" },
+    { nombre: "El Phantasmo", img: "assets/img/roster_njpw/El_phantasmo.png" },
+    { nombre: "Francesco_Akira", img: "assets/img/roster_njpw/Francesco_Akira.png" },
+    { nombre: "Gabe Kidd", img: "assets/img/roster_njpw/GabeKidd.png" },
+    { nombre: "Great O khan", img: "assets/img/roster_njpw/Great_O_khan.png" },
+    { nombre: "Mima Shimoda", img: "assets/img/roster_njpw/Mima_Shimoda.png" },
+    { nombre: "Sanada", img: "assets/img/roster_njpw/Sanada.png" },
+    { nombre: "Saya Kamitani", img: "assets/img/roster_njpw/Saya_Kamitani.avif" },
+    { nombre: "Shun Skywalker", img: "assets/img/roster_njpw/Shun_Skywalker.png" },
+    { nombre: "Syuri", img: "assets/img/roster_njpw/syuri.avif" },
+    { nombre: "Aron", img: "assets/img/roster_njpw/Aron.png" },
     { nombre: "Tetsuya Naito", pais: "japon", empresa: "njpw", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "102 kg", altura: "1.80 m", estilo: "Técnico / Strong Style", img: "assets/img/roster_njpw/TetsuyaNaito.jpg" },
+    { nombre: "Toru Yano", img: "assets/img/roster_njpw/Toru_yano.png" },
+    { nombre: "Yota Tsuji", img: "assets/img/roster_njpw/YotaTsuji.png" },
     { nombre: "Naomichi Marufuji", pais: "japon", empresa: "noah", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "90 kg", altura: "1.76 m", estilo: "Striker / Aéreo", img: "assets/img/roster_noah/NaomichiMarufuji.png" }
 ];
    
