@@ -2,10 +2,10 @@
 const infoEmpresas = {
     wwe: { nombre: "World Wrestling Entertainment", logo: "assets/img/logo/wwe.png", campeonatos: { "Masculino Individual": ["Undisputed WWE Championship", "World Heavyweight Championship", "Intercontinental Championship", "United States Championship"], "Femenino Individual": ["WWE Women's Championship", "Women's World Championship"], "Parejas": ["World Tag Team Championship", "WWE Tag Team Championship", "WWE Women's Tag Team Championship"] } },
     aew: { nombre: "All Elite Wrestling", logo: "assets/img/logo/aew.png", campeonatos: { "Masculino Individual": ["AEW World Championship", "TNT Championship", "International Championship", "Continental Championship"], "Femenino Individual": ["AEW Women's World Championship", "TBS Championship"], "Parejas y Tercias": ["AEW World Tag Team Championship", "AEW World Trios Championship"] } },
-    cmll: { nombre: "Consejo Mundial de Lucha Libre", logo: "assets/img/logo/CMLL.png", campeonatos: { "Masculino Individual": ["Campeonato Mundial Histórico NWA Peso Medio", "Campeonato Mundial Completo del CMLL", "Campeonato Mundial Semicompleto"], "Femenino Individual": ["Campeonato Mundial Femenil del CMLL", "Campeonato Nacional Femenil"], "Parejas y Tercias": ["Campeonato Mundial de Parejas", "Campeonato Mundial de Tríos del CMLL"] } },
+    cmll: { nombre: "Consejo Mundial de Lucha Libre", logo: "assets/img/logo/CMLL.png", campeonatos: { "Masculino Individual": ["Campeonato Mundial Histórico NWA Peso Medio", "Campeonato Mundial Completo del CMLL"], "Femenino Individual": ["Campeonato Mundial Femenil del CMLL", "Campeonato Internacional Femenil del CMLL"], "Parejas y Tercias": ["Campeonato Mundial de Parejas", "Campeonato Mundial de Tríos del CMLL"] } },
     aaa: { nombre: "Lucha Libre AAA Worldwide", logo: "assets/img/logo/AAA.png", campeonatos: { "Masculino Individual": ["Megacampeonato de AAA", "Campeonato Latinoamericano AAA", "Campeonato Mundial de Peso Crucero AAA"], "Femenino Individual": ["Campeonato Reina de Reinas de AAA"], "Parejas y Tercias": ["Campeonato Mundial en Parejas de AAA", "Campeonato Mundial de Tríos de AAA", "Campeonato Mundial en Parejas Mixto"] } },
     njpw: { nombre: "New Japan Pro-Wrestling", logo: "assets/img/logo/NJPW.png", campeonatos: { "Masculino Individual": ["IWGP World Heavyweight Championship","IWGP Global Heavyweight Championship", "NEVER Openweight Championship", "IWGP Junior Heavyweight Championship"], "Femenino Individual": ["IWGP Women's Championship"], "Parejas": ["IWGP Tag Team Championship", "IWGP Junior Heavyweight Tag Team Championship"] } },
-    noah: { nombre: "Pro Wrestling NOAH", logo: "assets/img/logo/NOAH.png", campeonatos: { "Masculino Individual": ["GHC Heavyweight Championship", "GHC National Championship", "GHC Junior Heavyweight Championship"], "Parejas": ["GHC Tag Team Championship", "GHC Junior Heavyweight Tag Team Championship"] } }
+    noah: { nombre: "Pro Wrestling NOAH", logo: "assets/img/logo/NOAH.png", campeonatos: { "Masculino Individual": ["GHC Heavyweight Championship", "GHC National Championship", "GHC Junior Heavyweight Championship"], "Femenino Individual": ["GHC Women's Championship"], "Parejas": ["GHC Tag Team Championship", "GHC Junior Heavyweight Tag Team Championship"] } }
 };
 
 // --- 2. BASE DE DATOS DE LUCHADORES SIMULADA ---
@@ -151,12 +151,16 @@ const galeriaInicio = document.getElementById('galeria-inicio');
 document.addEventListener('DOMContentLoaded', () => {
     // 4.1. Tema Claro / Oscuro
     const btnThemeToggle = document.getElementById('btn-theme-toggle');
+
+    // Iconos (Font Awesome) para el botón de tema
+    const ICONO_CLARO  = '<i class="fa-solid fa-sun fa-bounce"></i> Modo Claro';
+    const ICONO_OSCURO = '<i class="fa-solid fa-moon fa-beat-fade"></i> Modo Oscuro';
     
     // Comprobar si había tema guardado en LocalStorage
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
         document.body.setAttribute('data-theme', 'light');
-        if(btnThemeToggle) btnThemeToggle.textContent = '🌑 Modo Oscuro';
+        if(btnThemeToggle) btnThemeToggle.innerHTML = ICONO_OSCURO;
     }
 
     if (btnThemeToggle) {
@@ -164,11 +168,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const isDark = document.body.getAttribute('data-theme') !== 'light';
             if (isDark) {
                 document.body.setAttribute('data-theme', 'light');
-                btnThemeToggle.textContent = '🌑 Modo Oscuro';
+                btnThemeToggle.innerHTML = ICONO_OSCURO;
                 localStorage.setItem('theme', 'light');
             } else {
                 document.body.removeAttribute('data-theme');
-                btnThemeToggle.textContent = '🌙 Modo Claro';
+                btnThemeToggle.innerHTML = ICONO_CLARO;
                 localStorage.setItem('theme', 'dark');
             }
         });

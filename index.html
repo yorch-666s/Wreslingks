@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Lucha Libre & Wrestling</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/iconos/src/iconos/css/all.min.css">
 </head>
 <body> 
     <header>
         <h1>Lucha Libre / Wrestling</h1>
         <form class="search-container" id="form-busqueda">
             <input type="search" id="busqueda" placeholder="Buscar luchador (Ej. Mistico, Roman...)" aria-label="Buscar luchador">
-            <button type="submit" id="btn-buscar">Buscar</button>
-            <button id="btn-theme-toggle" class="btn-theme">🌙 Modo Claro</button>
+            <button type="submit" id="btn-buscar"><i class="fa-solid fa-magnifying-glass fa-beat-fade"></i> Buscar</button>
+            <button type="button" id="btn-theme-toggle" class="btn-theme"><i class="fa-solid fa-sun fa-bounce"></i> Modo Claro</button>
         </form>
         <p id="mensaje-error" class="oculto" aria-live="polite">No encontramos a ese luchador. Revisa el nombre e intenta de nuevo.</p>
     </header>
 
     <nav class="paises-nav" aria-label="Navegación principal">
         <ul>
-            <li><a href="index.html" class="btn-pais activo">🏠 Inicio</a></li>
+            <li><a href="index.html" class="btn-pais activo"><i class="fa-solid fa-house fa-flip"></i> Inicio</a></li>
             <li><a href="usa.html" class="btn-pais">USA</a></li>
             <li><a href="mexico.html" class="btn-pais">México</a></li>
             <li><a href="japon.html" class="btn-pais">Japón</a></li>
