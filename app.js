@@ -133,7 +133,16 @@ const baseDatosLuchadores = [
     { nombre: "Tetsuya Naito", pais: "japon", empresa: "njpw", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "102 kg", altura: "1.80 m", estilo: "Técnico / Strong Style", img: "assets/img/roster_njpw/TetsuyaNaito.jpg" },
     { nombre: "Toru Yano", img: "assets/img/roster_njpw/Toru_yano.png" },
     { nombre: "Yota Tsuji", img: "assets/img/roster_njpw/YotaTsuji.png" },
-    { nombre: "Naomichi Marufuji", pais: "japon", empresa: "noah", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "90 kg", altura: "1.76 m", estilo: "Striker / Aéreo", img: "assets/img/roster_noah/NaomichiMarufuji.png" }
+    { nombre: "Bushi", img: "assets/img/roster_noah/bushi.avif" },
+    { nombre: "Kazuki Fujita", img: "assets/img/roster_noah/kazuki_fujita.avif" },
+    { nombre: "Kenoh", img: "assets/img/roster_noah/kenoh.avif" },
+    { nombre: "Mirai", img: "assets/img/roster_noah/MIRAI.avif" },
+    { nombre: "Muhammad Yone", img: "assets/img/roster_noah/muhammad_yone.avif" },
+    { nombre: "Naomichi Marufuji", pais: "japon", empresa: "noah", genero: "masculino", categoria: "individual", nacionalidad: "Japonés", peso: "90 kg", altura: "1.76 m", estilo: "Striker / Aéreo", img: "assets/img/roster_noah/NaomichiMarufuji.png" },
+    { nombre: "Ozawa", img: "assets/img/roster_noah/ozawa.avif" },
+    { nombre: "Reggie Soleil", img: "assets/img/roster_noah/reggie_soleil.png" },
+    { nombre: "Yoshiki Inamura", img: "assets/img/roster_noah/yoshiki_inamura.avif" },
+    { nombre: "Yoshitatsu", img: "assets/img/roster_noah/yoshitatsu.avif" }
 ];
    
 // --- 3. VARIABLES DEL DOM ---
