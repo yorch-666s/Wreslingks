@@ -249,7 +249,7 @@ function seleccionarEmpresa(empresaKey) {
             
             htmlCat += `
                 <li class="camp-item" onclick="toggleCampImg(this)">
-                    🏆 ${camp} <span>▼</span>
+                    <i class="fa-solid fa-trophy"></i> ${camp} <span>▼</span>
                     <img class="camp-img" src="assets/img/campeonatos/${nombreFormateado}" onerror="this.src='assets/img/campeonatos/${imgPlaceholder}'" alt="${camp}">
                 </li>`; 
         });
